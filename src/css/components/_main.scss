@@ -1,0 +1,60 @@
+#main {
+    display:flex;
+    flex-wrap: wrap;
+    width: clamp(360px, 80vw, 700px);
+    align-items: center;
+    div {
+        padding:8px;
+        font-size: 1.3rem;
+        width:33.3%;
+        text-align: center;
+        display:flex;
+        justify-content: center;
+        
+        .inputBtn {
+            display:flex;
+            text-align: center;
+            align-items: center;
+            div, span {
+                background:rgba(35, 35, 35, 0.5);
+                height:45px;
+
+                display:flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+            div {
+                font-size:1.7rem;
+                padding: 0 18px;
+            }
+            span {
+                cursor:pointer;
+                transition: 200ms;
+                padding: 0 12px;
+                &:hover {
+                    background-color:rgba(35, 35, 35, 1)
+                }
+            }
+            .left {
+                border-radius: 50% 0 0 50%;
+            }
+            .hidden {
+                pointer-events: none;
+                opacity: 0.5;
+            }
+            .right {
+                border-radius: 0 50% 50% 0 ;
+            }
+        }
+    }
+    .score {
+        font-size: 2rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.774);
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .teamName {
+        font-size:1.9rem;
+        padding-bottom:36px;
+    }
+}
